@@ -6,11 +6,20 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, ul {
+  margin: 0px;
 }
 
 ul  {
   padding: 0px;
-  margin: 0px;
 }
 
 ul li {
@@ -21,6 +30,7 @@ ul li {
   background-color: #000000;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .header-conteudo {
@@ -42,13 +52,13 @@ ul li {
   flex-wrap: wrap;
 }
 
-.header-conteudo a {
+.header-conteudo nav  a {
   font-size: 18px;
   padding: 16px 8px;
   position: relative;
 }
 
-.header-conteudo a:after {
+.header-conteudo nav a:after {
   content:"";
   display: block;
   width: 0px;
@@ -59,17 +69,17 @@ ul li {
   position: absolute;
 }
 
-.header-conteudo a:hover:after {
+.header-conteudo nav a:hover:after {
   width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-  .header-conteudo a {
+  .header-conteudo nav a {
     background-color: #111111;
     border-radius: 4px;
   }
 
-  .header-conteudo a:after {
+  .header-conteudo nav a:after {
     display: none;
   }
 
@@ -79,7 +89,7 @@ ul li {
 }
 
 @media screen and (max-width: 600px) { 
-  .header-conteudo a {
+  .header-conteudo nav a {
     padding: 8px 4px;
     font-size: 14px;
   }
@@ -92,3 +102,48 @@ ul li {
     gap: 12px;
   }
 }
+
+/**Introducao*/
+.principal-bg {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.principal-conteudo {
+  box-sizing: border-box;
+  max-width: 1200px;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.principal-conteudo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding-bottom: 32px;
+  line-height:1.12;
+}
+
+.principal-conteudo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.principal-conteudo .principal-texto a {
+  background: linear-gradient( #FFBF00 , #F2A50C);
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-bottom: 120px;
+}
+
+
+span {
+  color: #ffbb00;
+}
+
+/* .principal-imagem img{
+  width: 640px;
+  object-fit: cover;
+} */
