@@ -1,7 +1,8 @@
 
 .principal-bg {
-  background-color: #000000;
+  background: #000000 url('../../img/dec/bottom-left.svg') no-repeat bottom 20px left 15px;
   color: #ffffff;
+  box-shadow: inset 0 -120px #fff;
 }
 
 .principal-conteudo {
@@ -10,13 +11,15 @@
   display: flex;
   margin-left: 40px;
   margin-right: 40px;
+  font-family: 'Poppins', sans-serif;
+  gap: 0 40px;
 }
 
 .principal-conteudo h1 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   padding-bottom: 32px;
-  line-height:1.12;
+  line-height: 1.12;
+  font-size: 64px;
 }
 
 .principal-conteudo p {
@@ -25,21 +28,70 @@
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: 20px;
+  color: #b2b2b2;
 }
 
 .principal-conteudo .principal-texto a {
   background: linear-gradient( #FFBF00 , #F2A50C);
   padding: 12px 24px;
   border-radius: 4px;
-  margin-bottom: 120px;
+  color: #332200;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
 }
 
+.principal-conteudo .principal-texto a:hover {
+  background: linear-gradient( #e9af03 , #df980b);
+}
 
 span {
   color: #ffbb00;
 }
 
-/* .principal-imagem img{
-  width: 640px;
+.principal-texto {
+ align-self: end;
+ padding-bottom: 200px;
+}
+
+.principal-imagem img{
+  width: 500px;
+  height: 700px;
   object-fit: cover;
-} */
+  border-radius: 4px;
+}
+
+/**Media querys**/
+@media screen and (max-width: 1000px) {
+  .principal-conteudo h1 {
+    font-size: 42px;
+  }
+  .principal-conteudo p {
+    font-size: 18px;
+  }
+  .principal-imagem img{
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .principal-conteudo {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .principal-bg {
+    background-color: #111111;
+  }
+  .principal-conteudo h1 {
+    padding-bottom: 24px;
+  }
+
+  .principal-texto {
+    padding-bottom: 40px;
+  }
+
+  .principal-imagem img{
+    width: 100%;
+    height: 300px;
+  }
+}
