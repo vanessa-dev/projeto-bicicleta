@@ -1,0 +1,45 @@
+
+.principal-bg {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.principal-conteudo {
+  box-sizing: border-box;
+  max-width: 1200px;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.principal-conteudo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding-bottom: 32px;
+  line-height:1.12;
+}
+
+.principal-conteudo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.principal-conteudo .principal-texto a {
+  background: linear-gradient( #FFBF00 , #F2A50C);
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-bottom: 120px;
+}
+
+
+span {
+  color: #ffbb00;
+}
+
+/* .principal-imagem img{
+  width: 640px;
+  object-fit: cover;
+} */
