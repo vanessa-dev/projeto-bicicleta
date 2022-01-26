@@ -11,7 +11,6 @@
   display: flex;
   margin-left: 40px;
   margin-right: 40px;
-  font-family: 'Poppins', sans-serif;
   gap: 0 40px;
 }
 
@@ -20,10 +19,6 @@
 }
 
 .principal-conteudo p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
   padding-bottom: 20px;
   color: #b2b2b2;
 }

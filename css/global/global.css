@@ -11,6 +11,8 @@ a {
 
 img {
   display: block;
+}
+img[src$=".jpg"] {
   width: 100%;
 }
 
