@@ -1,0 +1,60 @@
+.seguros-bg {
+  background-color: #111111;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.seguros-bg  h2 {
+  padding-bottom: 104px;
+}
+.seguro-card-header, 
+.seguro-principal {
+  display: flex;
+}
+
+.seguro-card-header { 
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.seguro-principal {
+ justify-content: center;
+}
+
+.seguro-card {
+  width: 560px;
+  box-sizing: border-box;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 16px 16px 16px 32px;
+}
+
+.seguro-card:first-child { 
+  margin-right: 40px;
+}
+
+.seguro-card-header p {
+ text-align: right;
+}
+
+.cor-ouro {
+  color: #ffbb00;
+}
+
+.cor-prata {
+  color: #9c9c9c;
+}
+
+.seguro-card-conteudo li + li{
+  padding-top: 20px;
+}
+
+.seguro-card-conteudo li::before {
+  content: "";
+  background: url("../../img/icones/lista.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+}
