@@ -1,0 +1,94 @@
+.depoimento-conteudo {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.depoimento-bg {
+  background-color: #ffbb00;
+}
+.depoimento-img{
+  width: 50%;
+}
+
+.depoimento-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.depoimento-citacao {
+  padding: 30px 60px;
+  align-self: end;
+}
+
+.depoimento-citacao .depoimento-texto{
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+  color: #332200;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento-citacao .depoimento-texto::after,
+.depoimento-citacao  .depoimento-texto::before {
+  font-size: 5rem;
+  color: #e4a30b;
+  position: absolute;
+}
+.depoimento-citacao  .depoimento-texto::before{
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+
+.depoimento-citacao .depoimento-texto::after {
+  content: "”";
+}
+
+cite p {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color:#664400;
+  font-style: normal;
+}
+
+/**Media query**/
+@media screen and (max-width: 900px) {
+  .depoimento-conteudo {
+    flex-direction: column;
+  }
+  
+  .depoimento-img, .depoimento-citacao {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .depoimento-citacao {
+    padding: 20px 0px;
+  }
+
+  .depoimento-img img {
+    max-height: 150px;
+  }
+
+  .depoimento-citacao .depoimento-texto {
+    font-size: 20px;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  cite p {
+    font-size: 16px;
+  }
+
+  .depoimento-citacao .depoimento-texto::after,
+  .depoimento-citacao  .depoimento-texto::before {
+    content: "";
+  }
+}

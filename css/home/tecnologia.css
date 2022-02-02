@@ -77,7 +77,7 @@
   object-position: left;
   border-radius: 4px;
 }
-/**Media Query*/
+
 @media screen and (max-width: 1200px) {
   .tecnologia-img img {
     display: none;
