@@ -23,19 +23,7 @@
   color: #b2b2b2;
 }
 
-.principal-conteudo .principal-texto a {
-  background: linear-gradient( #FFBF00 , #F2A50C);
-  padding: 12px 24px;
-  border-radius: 4px;
-  color: #332200;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 18px;
-}
 
-.principal-conteudo .principal-texto a:hover {
-  background: linear-gradient( #e9af03 , #df980b);
-}
 
 span {
   color: #ffbb00;

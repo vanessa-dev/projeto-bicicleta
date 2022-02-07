@@ -6,6 +6,7 @@
 
 .seguros-bg  h2 {
   padding-bottom: 104px;
+  margin-left: 80px;
 }
 .seguro-card-header, 
 .seguro-principal {
@@ -20,6 +21,7 @@
 
 .seguro-principal {
  justify-content: center;
+ align-items: center;
 }
 
 .seguro-card {
@@ -28,6 +30,11 @@
   background-color: #000;
   border-radius: 4px;
   padding: 16px 16px 16px 32px;
+  max-height: 396px;
+}
+
+.seguro-card.card-grande {
+  max-height: 484px;
 }
 
 .seguro-card:first-child { 
@@ -57,4 +64,30 @@
   display: inline-block;
   width: 13px;
   height: 9px;
+  margin-right: 16px;
+}
+
+.seguro-card-conteudo ul {
+  padding-bottom: 32px;
+}
+
+/**Media query*/
+@media screen and (max-width: 1200px) {
+  .seguro-principal {
+    padding: 0 12px;
+  }
+
+  .seguro-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .seguro-principal {
+    flex-direction: column;
+  }
+
+  .seguro-card:first-child { 
+    margin: 20px 0px;
+  }
 }

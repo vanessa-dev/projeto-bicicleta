@@ -26,6 +26,10 @@
   .texto-medio {
     font-size: 18px;
   }
+
+  .texto-decorativo {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 400px) {

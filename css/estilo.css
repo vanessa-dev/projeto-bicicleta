@@ -1,6 +1,7 @@
 @import './global/global.css';
 @import './global/header.css';
 @import './global/tipografia.css';
+@import './global/utilitarios.css';
 
 @import './home/introducao.css';
 @import './home/bicicletas.css';

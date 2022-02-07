@@ -1,0 +1,25 @@
+.botao {
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+.botao.amarelo {
+  background: linear-gradient( #FFBF00 , #F2A50C);
+  color: #332200;
+}
+
+.botao.cinza {
+  background: #2e2e2e;
+}
+
+.botao.cinza:hover {
+  background: #222222;
+}
+
+.botao.amarelo:hover {
+  background: linear-gradient( #e9af03 , #df980b);
+}
