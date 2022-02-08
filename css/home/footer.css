@@ -1,0 +1,37 @@
+.footer-bg {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-conteudo {
+  padding: 60px 120px 20px 120px;
+}
+
+.redes-sociais,
+.footer-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-infos{
+  padding-bottom: 24px;
+}
+
+.footer-infos h3 {
+  padding-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer-infos li,
+.footer-links-internos p,
+.footer-infos ul {
+  padding-bottom: 4px;
+}
+
+.footer-contato li:nth-child(even){
+  border-bottom: 2px solid #111;
+  margin: 8px 0;
+}
