@@ -5,6 +5,7 @@
 }
 
 .depoimento-bg {
+  background:  url('../../img/dec/bottom-right-p.svg') no-repeat bottom 20px right 15px, url('../../img/dec/top-left-p.svg') no-repeat top 20px left 45%;
   background-color: #ffbb00;
 }
 .depoimento-img{
