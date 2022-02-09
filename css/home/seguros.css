@@ -75,7 +75,8 @@
 /**Media query*/
 @media screen and (max-width: 1200px) {
   .seguro-principal {
-    padding: 0 12px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .seguro-card {

@@ -15,11 +15,11 @@
 
 .footer-infos{
   padding-bottom: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-infos h3 {
   padding-bottom: 32px;
-  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
@@ -28,10 +28,45 @@
 .footer-infos li,
 .footer-links-internos p,
 .footer-infos ul {
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .footer-contato li:nth-child(even){
   border-bottom: 2px solid #111;
   margin: 8px 0;
+}
+
+.footer-contato li, .footer-links-internos p{
+  color: #b2b2b2;
+  font-size: 18px;
+}
+
+.footer-contato li {
+  font-weight: 400;
+}
+
+.footer-links-internos p {
+  font-weight: 500;
+}
+
+/**Media query*/
+@media screen and (max-width: 900px) {
+  .footer-infos div:first-child {
+    display: none;
+  }
+
+  .footer-conteudo {
+    padding: 30px 60px 10px 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-infos {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-infos h3 {
+    padding-bottom: 20px;
+  }
 }
