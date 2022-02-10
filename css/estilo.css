@@ -2,6 +2,8 @@
 @import './global/header.css';
 @import './global/tipografia.css';
 @import './global/utilitarios.css';
+@import './global/sub-cabecalho.css';
+
 
 @import './home/introducao.css';
 @import './home/bicicletas.css';
@@ -9,7 +11,9 @@
 @import './home/parceiros.css';
 @import './home/depoimento.css';
 @import './home/seguros.css';
-@import './home/footer.css';
+
+
+@import './global/footer.css';
 
 
 

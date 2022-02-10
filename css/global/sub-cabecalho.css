@@ -1,0 +1,10 @@
+.sub-cabecalho-bg {
+  background-color: #111;
+  padding: 60px 0px;
+  color: #fff;
+}
+
+.sub-cabecalho-conteudo p {
+  color: #b2b2b2;
+  text-transform: uppercase;
+}

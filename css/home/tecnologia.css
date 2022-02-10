@@ -8,9 +8,6 @@
 .tecnologia-conteudo {
   display: flex;
   box-sizing: border-box;
-  max-width: 1200px;
-  margin-left: 40px;
-  margin-right: 40px;
   gap: 0 40px;
 }
 

@@ -23,3 +23,9 @@
 .botao.amarelo:hover {
   background: linear-gradient( #e9af03 , #df980b);
 }
+
+.container {
+  max-width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
