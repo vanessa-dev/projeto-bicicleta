@@ -5,6 +5,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.texto-pequeno {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.texto-pequeno-r {
+ font-weight: 400;
+}
+
 .texto-medio {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
