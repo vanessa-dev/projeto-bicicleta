@@ -18,6 +18,19 @@
  font-family: 'Poppins', sans-serif;
 }
 
+.bicicleta-item-botao {
+  display: flex;
+  align-items: center;
+}
+.bicicletas-item-info .botao::after {
+  content: "";
+  display: inline-block;
+  background: url("../../img/icones/seta.svg") no-repeat;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+}
+
 .bicicletas-item-info {
  padding-top: 40px;
 }
@@ -73,8 +86,12 @@
   color: #595959;
 }
 
+.bicicletas-item-bg {
+  background:  url('../../img/dec/top-right.svg') no-repeat top right 30px;
+}
+
 .bicicletas-item-bg:nth-child(even) {
-  background: linear-gradient(to right, #fff 30%, #111 0%);
+  background: linear-gradient(to right, #fff 30%, #111 0%), url('../../img/dec/top-right.svg') no-repeat top right 30px;
 }
 
 .bicicletas-item-bg:nth-child(even) .bicicletas-item-descricao h2 {
@@ -84,3 +101,30 @@
 .bicicletas-item-bg:nth-child(even) .bicicletas-item-descricao p {
   color:#b2b2b2;
 }
+
+@media screen and (max-width: 860px) {
+  .bicicletas-item-conteudo {
+    flex-direction: column;
+  }
+  .bicicletas-item-bg {
+    background-image: none;
+  }
+  .bicicletas-item-bg:nth-child(even) {
+    background: #111;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bicicletas-item-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bicicletas-page .bicicleta-item-botao {
+    align-self: flex-start;
+  }
+  .sub-cabecalho-conteudo p {
+    font-size: 14px;
+  }
+}
+
