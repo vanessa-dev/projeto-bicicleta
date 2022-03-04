@@ -1,0 +1,68 @@
+.contato-bg {
+  background: linear-gradient(#111 45%, #f7f7f7 0px);
+}
+
+.contato-conteudo {
+  max-width: 1160px;
+  display: flex;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+
+.contato-endereco {
+  background-color: #000;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.contato-form,
+.contato-endereco {
+  box-sizing: border-box;
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0,0, 10%);
+}
+
+
+.contato-form {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.contato-endereco > div {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 16px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.lista-rua p, 
+.lista-contato a {
+  padding-bottom: 8px;
+}
+.lista-rua,
+.telefone,
+.lista-contato,
+.contato-redes {
+  padding-left: 28px;
+}
+
+.lista-rua {
+  background: url("../../img/icones/local.svg") no-repeat 0px 2px;
+}
+
+.lista-contato {
+  background: url("../../img/icones/email.svg") no-repeat 0px 2px;
+}
+.telefone {
+  margin-bottom: 60px;
+  background: url("../../img/icones/telefone.svg") no-repeat 0px 2px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+}
