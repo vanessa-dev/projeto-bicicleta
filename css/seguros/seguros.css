@@ -31,10 +31,50 @@
 .lista-item h3 {
   padding-bottom: 8px;
 }
-
-.perguntas-lista div:nth-child(odd) {
-  background-color: #f7f7f7;
+.perguntas-lista div{
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 6px;
+}
+
+.perguntas-lista div:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.perguntas-lista dt {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+dt, .perguntas-lista p {
+  display: flex;
+  align-items: center;
+}
+
+dt {
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+dd {
+  padding-left: 20px;
+  color: #404040;
+}
+
+.perguntas-lista p::before {
+ content: "";
+ display: inline-block;
+ width: 12px;
+ height: 8px;
+ background-color: #ffbb00;
+ margin-right: 8px;
+ align-self: center;
+}
+
+.perguntas-lista dt::after {
+  content: "";
+  display: inline-block;
+  background: url(../../img/icones/seta-abrir.svg) no-repeat;
+  width: 14px;
+  height: 6px;
 }

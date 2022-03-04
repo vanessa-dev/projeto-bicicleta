@@ -16,7 +16,8 @@ img[src$=".jpg"] {
   width: 100%;
 }
 
-h1, h2, h3, ul,ol, p, blockquote {
+
+h1, h2, h3, ul,ol, p, blockquote, dd {
   margin: 0px;
 }
 
