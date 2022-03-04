@@ -66,3 +66,33 @@
   display: flex;
   gap: 32px;
 }
+
+.contato-form label {
+  display: block;
+  color: #111;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.contato-form button {
+  border: none;
+}
+
+.contato-form form > div {
+  padding-bottom: 20px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  outline: none;
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.contato-form .flex > div {
+ width: 50%;
+}
