@@ -8,6 +8,10 @@
   padding-bottom: 120px;
 }
 
+.perguntas h2 {
+  padding-bottom: 88px;
+}
+
 .lista-vantagens {
   display: flex;
   gap: 20px;
