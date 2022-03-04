@@ -104,3 +104,10 @@ dd {
   }
 
 }
+
+@media screen and (max-width: 450px) {
+  .perguntas-lista div {
+    padding: 0px;
+  }
+  
+}
