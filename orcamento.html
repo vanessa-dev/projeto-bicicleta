@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
-<body id="contato">
+<body id="orcamento">
   <header class="header-bg">
     <div class="header-conteudo">
       <a href="./"><img src="img/bikcraft.svg" width="136" height="32" alt="Bicicleta Eletica"/></a>
@@ -35,92 +35,75 @@
     <section class="contato-bg">
       <div class="contato-conteudo container">
         <div class="contato-endereco">
-          <h2>Loja Online</h2>
-          <div class="lista-rua">
-            <p>Rua Ali Perto, 35</p>
-            <p>Rio de Janeiro - RJ</p>
-            <p>Brasil - Terra - Vita Láctea</p>
-          </div>
-          <div class="lista-contato">
-            <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
-            <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          </div>
-          <div class="telefone">
-            <a href="tel:+552199999999">+55 21 9999-9999</a>
-          </div>
-          <div class="contato-redes">
-            <a href="./">
-              <img src="./img/redes/instagram-p.svg" alt="Instagram">
-            </a>
-            <a href="./">
-              <img src="./img/redes/facebook-p.svg" alt="Facebook">
-            </a>
-            <a href="./">
-              <img src="./img/redes/youtube-p.svg" alt="Youtube">
-            </a>
-          </div>
+         <h2>Bickcraft ou Seguro ?</h2>
+         <input type="radio" name="tipo" id="bikcraft">
+         <label for="bickcraft">Bickcraft</label>
+         <input type="radio" name="tipo" id="seguro">
+         <label for="seguro">Seguro</label>
         </div>
         <div class="contato-form">
           <form>
+            <h2>Dados Pessoais</h2>
             <div class="flex">
               <div>
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+                <input type="text" id="nome" name="nome"/>
               </div>
               <div>
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999" />
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" />
               </div>
+            </div>
+            <div>
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="contato@email.com" />
+              <input type="email" id="email" name="email"/>
+            </div>
+            <h2>Entrega</h2>
+            <div class="flex">
+              <div>
+                <label for="cep">Cep</label>
+                <input type="text" id="cep" name="cep"/>
+              </div>
+              <div>
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" />
+              </div>
+            </div>
+            <div class="flex">
+              <div>
+                <label for="logradouro">Logradouro</label>
+                <input type="text" id="logradouro" name="logradouro" placeholder="Rua, avenida..."/>
+              </div>
+              <div>
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" />
+              </div>
+            </div>
+            <div class="flex">
+              <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade"/>
+              </div>
+              <div>
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                  <option value=""></option>
+                  <option value="SP">São Paulo</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </select>
+              </div>
             </div>
             <div>
-              <label for="mensagem">Mensagem</label>
-              <textarea rows="5" type="text" id="mensagem" name="mensagem" placeholder="O que voce precisa?" ></textarea>
+              <input type="checkbox" id="termos" name="termos"/>
+              <label for="termos">Li e aceito os termos e Condiçoes</label>
             </div>
-            <button class="botao amarelo">Enviar mensagem</button>
+            <button class="botao amarelo">Solicitar Orçamento</button>
           </form>
-        </div>
-      </div>
-    </section>
-    <section class="mapa container">
-      <h2 class="texto-grande">lojas locais <span>.</span></h2>
-      <div class="mapa-conteudo flex">
-        <div class="mapa-item">
-          <img src="img/lojas/rj.jpg" alt="Mapa do Rj">
-          <div class="mapa-descricao">
-            <h2>Rio de Janeiro</h2>
-            <div class="flex ruas">
-              <div>
-                <p>Rua Ali Perto, 25</p>
-                <p>Rio de Janeiro - RJ</p>
-              </div>
-              <div>
-                <p>rio@bikcraft.com</p>
-                <p>21 9999-9999</p>
-              </div>
-            </div>
-            <p>08-18h de seg à dom</p>
-          </div>
-        </div>
-        <div class="mapa-item">
-          <img src="img/lojas/sp.jpg" alt="Mapa do Rj">
-          <div class="mapa-descricao">
-            <h2>São Paulo</h2>
-            <div class="ruas flex">
-              <div>
-                <p>Rua Ali Perto, 25</p>
-                <p>SãoPaulo - SP</p>
-              </div>
-              <div>
-                <p>sp@bikcraft.com</p>
-                <p>21 9999-9999</p>
-              </div>
-            </div>
-            <p>08-18h de seg à dom</p>
-          </div>
         </div>
       </div>
     </section>
