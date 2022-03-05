@@ -7,11 +7,9 @@
 }
 
 .contato-conteudo {
+  box-sizing: border-box;
   max-width: 1160px;
   display: flex;
- 
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 60px;
 }
 
@@ -99,4 +97,104 @@
 
 .contato-form .flex > div {
  width: 50%;
+}
+
+.mapa-conteudo {
+  flex-wrap: wrap;
+}
+
+.mapa {
+  padding-bottom: 120px;
+}
+
+.mapa > h2 {
+ padding-bottom: 60px;
+}
+
+.mapa-descricao {
+ padding: 32px ;
+}
+
+.mapa-descricao > h2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.mapa-descricao > p {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.mapa-descricao > p::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icones/horario.svg") no-repeat;
+  margin-right: 12px;
+}
+
+.mapa-descricao > h2::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: #ffbb00;
+  margin-right: 12px;
+}
+
+.mapa-descricao .ruas {
+  gap: 74px;
+  margin-left: 24px;
+}
+
+.mapa-descricao .ruas > div {
+  border-left: 2px solid #ededed;
+  padding-left: 12px;
+}
+
+
+
+.mapa-item img {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.mapa-item {
+  max-width: 560px;
+  box-shadow: 0 1px 2px rgba(0, 0,0 ,0.1);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 850px) {
+  .contato-conteudo,
+  .mapa {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contato-conteudo{
+    flex-direction: column;
+  }
+  .contato-form {
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+  }
+  .contato-endereco {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .mapa-item {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .ruas {
+    flex-direction: column;
+  }
+  .contato-form,
+  .contato-endereco {
+    padding: 15px;
+  }
 }
