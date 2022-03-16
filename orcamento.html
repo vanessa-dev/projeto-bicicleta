@@ -35,11 +35,17 @@
     <section class="contato-bg">
       <div class="contato-conteudo container">
         <div class="contato-endereco">
-         <h2>Bickcraft ou Seguro ?</h2>
-         <input type="radio" name="tipo" id="bikcraft">
-         <label for="bickcraft">Bickcraft</label>
-         <input type="radio" name="tipo" id="seguro">
-         <label for="seguro">Seguro</label>
+          <h2>Bickcraft ou Seguro ?</h2>
+          <input type="radio" name="tipo" id="bikcraft">
+          <label for="bikcraft">Bickcraft</label>
+          <input type="radio" name="tipo" id="seguro">
+          <label for="seguro">Seguro</label>
+          <div class="orcamento-conteudo" id="orcamento-bikcraft">
+           <h2>Escolha a sua</h2>
+          </div>
+          <div class="orcamento-conteudo" id="orcamento-seguro">
+           <h2>Escolha o plano</h2>
+          </div>
         </div>
         <div class="contato-form">
           <form>
@@ -91,14 +97,14 @@
               <div>
                 <label for="estado">Estado</label>
                 <select name="estado" id="estado">
-                  <option value=""></option>
+                  <option value="">Selecione</option>
                   <option value="SP">São Paulo</option>
                   <option value="MG">Minas Gerais</option>
                   <option value="RJ">Rio de Janeiro</option>
                 </select>
               </div>
             </div>
-            <div>
+            <div id="container-termos">
               <input type="checkbox" id="termos" name="termos"/>
               <label for="termos">Li e aceito os termos e Condiçoes</label>
             </div>
