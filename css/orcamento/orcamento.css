@@ -156,3 +156,17 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 850px) {
+  #orcamento .contato-endereco {
+    width: 100%;
+  }
+
+  #orcamento .contato-endereco h2 + input + label {
+    margin-right: 15px;
+  }
+
+  #container-termos label {
+    font-size: 14px;
+  }
+
+}
