@@ -84,5 +84,52 @@
 }
 
 #orcamento .contato-endereco h2 + input + label  {
-  margin-right: 20px;
+  margin-right: 30px;
+}
+
+#orcamento  .orcamento-conteudo label {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#orcamento  .orcamento-conteudo span {
+  float: right;
+  color: #111;
+}
+
+.orcamento-detalhes {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 25px;
+  width: 100%;
+}
+
+.orcamento-detalhes img[src$="svg"] {
+  width: 16px;
+  height: 16px;
+}
+
+.orcamento-detalhes img[src$="jpg"] {
+  border-radius: 4px;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.orcamento-detalhes li {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.orcamento-conteudo >  h2 {
+  padding-top: 40px;
 }
