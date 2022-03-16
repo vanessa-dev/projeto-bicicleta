@@ -102,10 +102,10 @@
   background-color: #fff;
   border-radius: 4px;
   padding: 8px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin-bottom: 15px;
   gap: 25px;
   width: 100%;
 }
@@ -133,3 +133,26 @@
 .orcamento-conteudo >  h2 {
   padding-top: 40px;
 }
+
+#seguro:checked ~ #orcamento-seguro,
+#bikcraft:checked ~ #orcamento-bikcraft {
+  display: block;
+}
+
+.orcamento-conteudo,
+.orcamento-conteudo label span{
+  display: none;
+}
+
+.orcamento-conteudo input:checked + label span {
+  display: inline;
+}
+
+.orcamento-conteudo input:checked + label + .orcamento-detalhes {
+  display: flex;
+} 
+
+.orcamento-conteudo label {
+  margin-bottom: 15px;
+}
+
