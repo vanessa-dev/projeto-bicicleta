@@ -105,3 +105,42 @@ div .introducao-bike-lista:nth-child(2) .flex:first-child {
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 800px) {
+  .introducao-bike-conteudo,
+  .bike-seguro-conteudo {
+    flex-direction: column-reverse;
+  }
+
+  .bike-seguro-conteudo {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .bike-seguro-bg {
+    box-shadow: none;
+  }
+
+  .bike-seguro-descricao {
+    padding-top: 40px; 
+    padding-bottom: 40px;
+  }
+  .introducao-bike-conteudo > div:first-child {
+    min-width: 100%;
+  }
+  .introducao-bike-descricao .botao {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .introducao-bike-lista:nth-child(2) .flex,
+  .introducao-bike-descricao > .flex {
+    flex-direction: column;
+  }
+  .introducao-bike-descricao .botao {
+    align-self: flex-start;
+    width: 100%;
+  }
+}
