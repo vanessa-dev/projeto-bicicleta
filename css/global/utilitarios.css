@@ -34,3 +34,15 @@
   display: flex;
   gap: 20px;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.block {
+  display: block;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
