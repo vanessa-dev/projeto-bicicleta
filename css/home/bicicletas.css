@@ -49,6 +49,10 @@
   background: #ffbb00;
 }
 
+.bicicletas-container .bicicletas-item:hover h3:before {
+  width: 24px;
+}
+
 .bicicletas-container .bicicletas-item p {
   margin-left: 20px;
 }
